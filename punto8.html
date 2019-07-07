@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto 8</title>
+</head>
+<body>
+    <script>
+        let i=0;
+        let nombre;
+        let sexo, sueldo, cont=0, cont2 =0;
+        for(; i<10; i++){
+            nombre = window.prompt("Digite el nombre del empleado(a):");
+            sexo=parseInt(window.prompt("Digite el sexo del empleado (1 = femenino, 2= masculino)"));
+            if(sexo === 1){
+                sueldo = parseFloat(window.prompt("Digite el sueldo de la empleada:"));
+                if(sueldo>500){
+                    cont++;
+                }
+            }else if(sexo === 2){
+                sueldo = parseFloat(window.prompt("Digite el sueldo del trabajador:"));
+                if (sueldo < 400){
+                    cont2++;
+                }
+            }else {
+                alert("Opción no válida");
+                i+=-1;
+            }
+        }
+        document.write(`<p> Usted tiene a ${cont} mujer(es) con un sueldo mayor a $500 </p><p> Usted tiene a ${cont2} hombre(s) con un sueldo menor a $400 </p>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto 5</title>
+</head>
+<body>
+    <script>
+        function cuadrados(para1){
+            return Math.pow(para1,2);
+        }
+        function cubos(para1) {
+            return Math.pow(para1,3);
+        }
+        let i=1;
+        document.write("Los cuadrados de los primeros 10 números son: ");
+        for(; i<=10;i++){
+            document.write("<p>"+cuadrados(i)+"</p>");
+        }
+        i=1;
+        document.write("Los cubos de los primeros 10 números son: ");
+        for(; i<=10;i++){
+            document.write("<p>"+cubos(i)+"</p>");
+        }
+    </script>
+</body>
+</html>

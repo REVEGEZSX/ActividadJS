@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto 4</title>
+</head>
+<body>
+    
+    <script>
+        let contpos=0, i=0;
+        let contneg =1;
+        for(; i<10; i++){
+            let numero = parseInt(window.prompt("Digite un número"));
+            (numero>0)? contpos+=numero:contneg*=numero;
+        }
+        document.write(mostrar(contpos, contneg));
+
+        function mostrar(para1, para2){
+            return "<p>La suma de los positivos es: "+para1+"</p><p>La multiplicación de los negativos es: "+para2+"</p>"
+        }
+    </script>
+
+</body>
+</html>
