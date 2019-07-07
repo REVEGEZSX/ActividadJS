@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto 11</title>
+</head>
+<body>
+    <script>
+    let n = parseInt(window.prompt("Digite un número para determinar el tamaño del vector"));
+    let i=0, cont=0, cont2=0, vector = new Array(n);
+
+    for (; i<vector.length; i++){
+        n = parseInt(window.prompt("Digite un número:"));
+        if(n%2===0){
+            cont++;
+        }else {
+            cont2++;
+        }
+    }
+
+    document.write(`<p> Usted digitó ${cont} números positivos </p><p> Usted digitó ${cont2} números negativos </p>`)
+    </script>
+</body>
+</html>

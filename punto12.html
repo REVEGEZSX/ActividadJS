@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto 12</title>
+</head>
+<body>
+    <script>
+        let i=0, numero=0, cont =0, cont2=0;
+        while (numero<999) {
+            numero = parseInt(window.prompt("Digite un número entero:"));
+            if (numero===0){
+                console.log();
+            }else if (numero < 999){
+                (numero>0)? cont++:cont2++;
+            }
+        }
+        document.write(`<p>Usted digitó ${cont} números positivos.</p><p>Usted digitó ${cont2} números negativos.</p>`);
+    </script>
+</body>
+</html>
