@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto 16</title>
+</head>
+<body>
+    <script>
+        let vector = new Array(10), i=0, cont=0;
+
+        for(; i<vector.length; i++){
+            vector[i] = window.prompt("Digite un string");
+            if(vector[i].length > vector[cont].length){
+                cont = i;
+            }
+        }
+        
+        document.write(`${vector[cont]} es el string con más caracteres, con un total de: ${vector[cont].length}`);
+        
+    </script>
+</body>
+</html>

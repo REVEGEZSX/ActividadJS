@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cantidad = window.prompt("Digite cuántos digitos quiere mostrar");
+        let i = 0, inicio = 0, nudo = 1, descenlace;
+        
+        for (; i<cantidad; i++){
+            if(i == 0){
+                document.write(inicio + " ");
+            }else if(i == 1){
+                document.write(nudo + " ");
+            }else{
+                descenlace = nudo + inicio;
+                inicio = nudo;
+                nudo = descenlace;
+                document.write(descenlace + " ");
+            }
+        }
+    </script>
+</body>
+</html>
